@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+    <script>
+        const tam = 4;
+        var vetor = [tam];
+        var soma = 0;
+        var encerrar = false;
+        for(var i=0;i<tam;i++){
+            vetor[i]=parseInt(prompt("Digite a sua "+(i+1)+"º nota"));
+            if (vetor[i]<0 || vetor[i]>10){
+                document.write("Você digitou valores acima de 10 ou abaixo de 0, por favor reinicie o programa e digite corretamente.");
+                encerrar = true;
+                break;
+            }
+            soma = soma +vetor[i];
+        }
+        
+        if(!encerrar){
+            var media = soma/tam;
+            if(media<5){
+                document.write("Tente novamente");
+            }else{
+                document.write("Você passou no teste");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

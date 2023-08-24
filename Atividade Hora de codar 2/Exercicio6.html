@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+    <script>
+        const tam = 4;
+        var vetor = [tam];
+        var maiorNumero = -999999;
+        for (var i=0;i<tam;i++){
+            vetor[i] = parseInt(prompt("Digite o "+(i+1)+"º número"));
+            if (vetor[i]>maiorNumero){
+                maiorNumero = vetor[i];
+            }
+        }
+        document.write("Primeiro número: "+vetor[0]+"\n");
+        document.write("Último número: "+vetor[3]+"\n");
+        document.write("Maior número: "+maiorNumero);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

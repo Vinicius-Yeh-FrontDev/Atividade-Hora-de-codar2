@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+    <script>
+        var n1 = parseInt(prompt("Digite o primeiro número"));
+        var operador = parseInt(prompt("Digite a operção que deseja fazer. Sendo\n 1-Adição\n 2-Subtrção\n 3-Divisão\n 4-Multiplicação"));
+        var n2 = parseInt(prompt("Digite o segundo número"));
+        if (operador==1){
+            var resultado = n1+n2;
+            document.write("O resultado é: "+resultado);
+        }else if(operador==2){
+            var resultado = n1-n2;
+            document.write("O resultado é: "+resultado);
+        }else if(operador==3){
+            if (n2<0 || n2==0){
+                document.write("Não é possível fazer divisão por um número igual ou menor que 0");
+            }else{
+                var resultado = n1/n2;
+                document.write("O resultado é: "+resultado);
+            }
+        }else{
+            var resultado = n1*n2;
+            document.write("O resultado é: "+resultado);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>                 <!--A fórmula do peso ideal apresentada na atividade não estava funcionando, então peguei uma fórmula funcional-->
+    <script>
+        var sexo = parseInt(prompt("Qual o seu sexo? Sendo 1-Feminino 2-Masculino"));
+        var altura = parseFloat(prompt("Qual a sua altura? Em centímetros"));
+        if(sexo==1){
+            var pesoIdeal = 52+(0.67*(altura-152.4));
+            document.write("O seu peso ideal é: "+pesoIdeal);
+        }else if(sexo==2){
+            var pesoIdeal = 52+(0.75*(altura-152.4));
+            document.write("O seu peso ideal é: "+pesoIdeal);
+        }else{
+            document.write("Você digitou um valor inválido");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

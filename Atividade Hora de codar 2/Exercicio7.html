@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+    <script>
+        const tam = 6;
+        var vetor = [tam];
+        var soma=0;
+        for (var i=0;i<tam;i++){
+            vetor[i]=parseInt(prompt("Digite o "+(i+1)+"º número"));
+            if (vetor[i]<72){
+                soma = soma + vetor[i];
+            }
+        }
+        document.write("O valor da soma dos números menores que 72 é: "+soma+"<br>");
+        document.write("Os números que você digitou foram: "+vetor[0]+", "+vetor[1]+", "+vetor[2]+", "+vetor[3]+", "+vetor[4]+", "+vetor[5]);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
